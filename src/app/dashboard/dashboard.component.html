@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="row">
+       
+        <div class="col-md-3" >
+        
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                  <mat-icon fontIcon="home"></mat-icon>
+                </button>
+          
+             <mat-menu #menu="matMenu">
+               
+                <button mat-menu-item (click)="showComponent('tasks')">
+                 <mat-icon fontIcon="thumb_up"></mat-icon>
+                 <span>Tasks</span>
+               </button>
+
+               <button mat-menu-item (click)="showComponent('budget')">
+                 <mat-icon fontIcon="trending_up"></mat-icon>
+                 <span>Revenue</span>
+               </button>
+
+             </mat-menu> 
+          
+
+        
+
+        </div>
+        <div class="col-md-9">
+            <ng-container *ngComponentOutlet="currentComponent"></ng-container>
+            
+        </div>
+    </div>
+</div>
+
+

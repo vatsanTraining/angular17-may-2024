@@ -36,7 +36,9 @@ export class MenuComponent {
       {menuText:"View Users ",link:"/user"},
       {menuText:"View Tasks",link:"/tasks"},
       {menuText:"Add user",link:'/adduser'},
-      {menuText:"Employees",link:'/showemployee'}
+      {menuText:"Employees",link:'/showemployee'},
+      {menuText:"DashBoard",link:'/dashboard'}
+
     ];
       
     

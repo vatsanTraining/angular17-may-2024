@@ -10,6 +10,7 @@ import { AdduserComponent } from './adduser/adduser.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { ShowemployeeComponent } from './showemployee/showemployee.component';
 import { EditemployeeComponent } from './editemployee/editemployee.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
     {path:'',redirectTo:'login',pathMatch:'full'},
@@ -18,6 +19,8 @@ export const routes: Routes = [
     {path:'adduser',component:AdduserComponent},
     {path:'addemployee',component:AddemployeeComponent},
     {path:'showemployee',component:ShowemployeeComponent},
+    {path:'dashboard',component:DashboardComponent},
+    
     {path:'editemployee/:id',component:EditemployeeComponent},
 
     

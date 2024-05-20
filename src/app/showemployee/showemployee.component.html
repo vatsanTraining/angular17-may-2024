@@ -1,5 +1,5 @@
 
-<div>
+<div [appCustomborder]="clsToApply">
 <button [class]="['btn btn-info']" (click)="add()">Add</button>
 </div>
 <div>
@@ -15,7 +15,7 @@
     </thead>
     <tbody>
         @for (eachEmployee of employeeList|filter:'employeeName':srchValue; track $index) {
-        <tr>
+        <tr appHighlight>
             <td>{{eachEmployee.id}}</td>
             <td>{{eachEmployee.employeeName}}</td>
             <td>{{eachEmployee.designation}}</td>

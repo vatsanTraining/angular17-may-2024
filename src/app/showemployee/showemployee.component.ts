@@ -5,11 +5,13 @@ import { Serializer } from '@angular/compiler';
 import { Router } from '@angular/router';
 import { FilterPipe } from '../filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { CustomborderDirective } from '../customborder.directive';
+import { HighlightDirective } from '../highlight.directive';
 
 @Component({
   selector: 'app-showemployee',
   standalone: true,
-  imports: [FilterPipe,FormsModule],
+  imports: [FilterPipe,FormsModule,CustomborderDirective,HighlightDirective],
   templateUrl: './showemployee.component.html',
   styleUrl: './showemployee.component.css'
 })
@@ -17,7 +19,7 @@ export class ShowemployeeComponent {
 
   employeeList: Employee[];
   srchValue:string =''
-
+  clsToApply ='corner'
   constructor(private service:EmployeeService,private route:Router){
     console.log('Employee Service Called --- Step --->1')
 

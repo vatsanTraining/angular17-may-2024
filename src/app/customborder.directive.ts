@@ -11,6 +11,7 @@ export class CustomborderDirective {
 
   ngOnInit(){
 
-    this.renderer.addClass(this.element,this.className)
+    console.log(this.className)
+    this.renderer.addClass(this.element.nativeElement,this.className) // this.className will be corner
   }
 }
