@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": "101",
+      "task": "update the UI",
+      "timeLine": "this week"
+    },
+    {
+      "id": "102",
+      "task": "update the Documentation",
+      "timeLine": "this week"
+    },
+    {
+      "id": "103",
+      "task": "clean the Image styles",
+      "timeLine": "next week"
+    }
+  ],
+  "employees": [
+    {
+      "id": "101",
+      "employeeName": "shiv reddy",
+      "designation": "senior manager"
+    },
+    {
+      "id": "109",
+      "employeeName": "Jaya",
+      "designation": "Developer"
+    }
+  ],
+  "users": [
+    {
+      "id": "102",
+      "userName": "ramesh",
+      "email": "ram@abc.com"
+    },
+    {
+      "id": "200",
+      "email": "ram@abc.com",
+      "userName": "ramesh"
+    },
+    {
+      "id": "300",
+      "email": "sur@abc.com",
+      "userName": "suresh"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+
+<div>
+<button [class]="['btn btn-info']" (click)="add()">Add</button>
+</div>
+<div>
+<input type="search" name="srchValue" [(ngModel)]="srchValue">
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (eachEmployee of employeeList|filter:'employeeName':srchValue; track $index) {
+        <tr>
+            <td>{{eachEmployee.id}}</td>
+            <td>{{eachEmployee.employeeName}}</td>
+            <td>{{eachEmployee.designation}}</td>
+            <td><button class="btn btn-warning" (click)="edit(eachEmployee)">Edit</button></td>
+            <td><button class="btn btn-danger" (click)="remove(eachEmployee)">Delete</button></td>
+        </tr>
+    }
+    </tbody>
+</table>

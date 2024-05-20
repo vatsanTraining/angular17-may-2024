@@ -1,0 +1,19 @@
+<p>tasks works!</p>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Task Name</th>
+        <th>Time Line</th>
+    </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let eachTask of data">
+     <td>{{eachTask.id}}</td>
+     <td>{{eachTask.task |uppercase}}</td>
+     <td>{{eachTask.timeLine}}</td>
+    </tr>
+</tbody>
+</table>

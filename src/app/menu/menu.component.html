@@ -1,0 +1,37 @@
+<!-- example for property binding and event binding -->
+
+<!-- <div>
+<img [src]="logo" (mouseover)="handleHover()" (mouseout)="handleOut()">
+<button (click)="logout()">Logout</button>
+</div> -->
+<!-- <div>
+    <ol>
+        <li  *ngFor="let eachMenu of menuList"><a [href]="eachMenu.link">{{eachMenu.menuText}}</a></li>
+    </ol>
+</div> -->
+<!-- <div style="background-color: grey; height: 200px;">
+
+    <label>User Name</label>
+    <input type="text" [(ngModel)]="userName">
+
+    {{userName}}
+
+</div> -->
+
+<!-- <ul>
+    <li *ngFor="let eachMenu of menuList" style="display: inline; margin: 20px; text-decoration: none;">
+        <a [routerLink]=[eachMenu.menuText]>{{eachMenu.link}}</a>
+    </li>
+</ul> -->
+
+<ul>
+    @for (eachMenu of menuList; track $index) {
+        <a [routerLink]=[eachMenu.link] [class]="['linkStyle']">{{eachMenu.menuText}}</a>
+    }
+</ul>
+<!-- <div>
+    <p> Parent and Child Communications</p>
+    {{fromParent}}
+
+    <button (click)="sendResponse()">Send Reply</button>
+</div> -->

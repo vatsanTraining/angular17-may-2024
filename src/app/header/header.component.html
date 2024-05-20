@@ -1,0 +1,27 @@
+<header>
+
+    <!-- //border is the css property and borderStyle is property defined in the headercomponent.ts -->
+
+    <h1 [ngStyle]="{border:borderStyle}">{{majHeading}}</h1>
+<!-- ngStyle is before ang17 and style is from ang17-->
+    <h4 [style]="colorStyle">{{subHeading}}</h4>
+
+    <!-- <h2 [ngClass]="['centerText','arialFont']">Styled By NG Class</h2>
+    <h2 [class]="'arialFont'">Style by Class</h2>
+
+
+    <h6 [ngClass]="{'centerText':isAlign,'arialFont':true}">Using Truthy with ngclass</h6>
+
+
+    <button class="btn btn-info" (click)="change()">Change alignment </button> -->
+</header>
+
+<!-- <section>
+
+   response: {{fromChild}}
+
+   {{date|date:'medium'}}
+
+</section>
+<button (click)="greet()">Greet</button> -->
+<app-menu [fromParent]='toChild' (reply)="captureReply($event)"></app-menu>

@@ -1,0 +1,18 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label>User Name</label>
+    <input type="text" formControlName="customerName" required>
+    <label>Id</label>
+    <input type="text" formControlName="id" required>
+    <label>Email Id</label>
+    <input type="email" formControlName="email" email="required">
+    
+    <input type="submit" value="button" class="btn btn-info">
+</form>    
+
+{{userForm.value |json}}
+
+<h2>{{message}}</h2>
+email: new FormControl(),
+customerName: new FormControl(),
+id: new FormControl() ,
+tour:new FormControl()

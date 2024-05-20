@@ -1,0 +1,19 @@
+<p>login works!</p>
+
+<form action="post" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div>
+        <label for="">User Name</label>
+        <input type="text" name="userName" [(ngModel)]="currentUser.userName">
+    </div>
+
+    <div>
+        <label for="">Email</label>
+        <input type="text" name="email" [(ngModel)]="currentUser.email">
+    </div>
+    <div>
+        <input type="submit" value="Login">
+        <button (click)="reset()">Clear</button>
+    </div>
+</form>
+
+{{currentUser|json}}

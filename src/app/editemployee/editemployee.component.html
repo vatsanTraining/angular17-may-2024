@@ -1,0 +1,9 @@
+
+<form action="post" (ngSubmit)="onSubmit()" #frm="ngForm">
+    <div><label for="">Id</label><input type="text" name="id" [(ngModel)]="employeeToEdit.id"></div>
+    <div><label for="">employeeName</label><input type="text" name="employeeName" [(ngModel)]="employeeToEdit.employeeName"></div>
+    <div><label for="">Designation</label><input type="text" name="designation" [(ngModel)]="employeeToEdit.designation"></div>
+
+    <div><input type="submit" value="Update"></div>
+
+</form>
